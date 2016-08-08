@@ -8,12 +8,14 @@ import {Task} from './task.model';
     <div class="task-form">
       <h3>Create Task:</h3>
       <input placeholder="Description" class="col-sm-8 input-lg" #newDescription>
-      <select placeholder="Priority" #newPriority>
+      <label for="new-priority">Priority: </label>
+      <select placeholder="Priority" #newPriority id="new-priority">
         <option>High</option>
         <option>Medium</option>
         <option>Low</option>
       </select>
-      <select placeholder="Category" #newCategory>
+      <label for="new-category">Category: </label>
+      <select placeholder="Category" #newCategory id="new-category">
         <option>Work</option>
         <option>Hobby</option>
         <option>Home</option>
